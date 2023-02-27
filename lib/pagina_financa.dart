@@ -257,7 +257,7 @@ class _PaginaFinancaState extends State<PaginaFinanca> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: Componentes().criaAppBar('FINANCA', 30, Colors.white, buscarCDI,
+      appBar: Componentes().criaAppBar('FINANCAS', 30, Colors.white, buscarCDI,
           const Icon(Icons.refresh_outlined)),
       body: SingleChildScrollView(
         physics: ScrollPhysics(),
