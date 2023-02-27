@@ -257,8 +257,8 @@ class _PaginaFinancaState extends State<PaginaFinanca> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: Componentes().criaAppBar(
-          '', 30, Colors.white, buscarCDI, const Icon(Icons.refresh_outlined)),
+      appBar: Componentes().criaAppBar('Esse', 30, Colors.white, buscarCDI,
+          const Icon(Icons.refresh_outlined)),
       body: SingleChildScrollView(
         physics: ScrollPhysics(),
         child: Column(
@@ -355,11 +355,11 @@ class _PaginaFinancaState extends State<PaginaFinanca> {
                 child: Column(children: [
                   ListTile(
                     title: Componentes().criaTexto(
-                        'Porcentagem/Ano: $porcentagemAnual%',
+                        'Porcentagem CDI/Ano: $porcentagemAnual%',
                         15,
                         Colors.black),
                     subtitle: Componentes().criaTexto(
-                        'Porcentagem/Mês: $porcentagemMensal%',
+                        'Porcentagem CDI/Mês: $porcentagemMensal%',
                         13,
                         Color.fromARGB(255, 77, 77, 77)),
                   ),
